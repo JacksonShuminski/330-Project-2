@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Project 2</title>
+    <style></style>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js" integrity="sha256-u8njNpzE/7fzKRST7Eu38nECKwFREeLMkipUauqgPpY=" crossorigin="anonymous"></script></head>
+    
+    <script src="src/sandbox.js"></script>
+    <script src="src/spider.js"></script>
+	<script src="src/audio.js"></script>
+</head>
+<body>
+<h1 id="title">Sandbox</h1>
+
+<audio controls src="audio/itsybitsy.mp3"></audio>
+
+<canvas id="sandbox"></canvas>
+
+<div class="controls">
+    <p>Color to Draw:  
+        <select id="colorChooser">
+            <option value="fire" selected>Fire</option>
+            <option value="water">Water</option>
+            <option value="plant">Plant</option>
+        </select>
+    </p>
+    <p>Draw Radius:  
+        <input type="range" min="1" max="20" value="5" id="drawRadius">
+    </p>
+    <p>Max Red Spiders:  
+        <input type="range" min="1" max="20" value="5" id="redMax">
+    </p>
+    <p>Max Green Spiders:  
+        <input type="range" min="1" max="20" value="5" id="greenMax">
+    </p>
+    <p>Max Blue Spiders:  
+        <input type="range" min="1" max="20" value="5" id="blueMax">
+    </p>
+
+    <p>Red:  
+        <select id="redEffect">
+            <option value="distortion" selected>Distortion</option>
+            <option value="treble">Treble</option>
+            <option value="bass">Bass</option>
+        </select>
+    </p>
+    <p>Green:  
+        <select id="greenEffect">
+            <option value="distortion">Distortion</option>
+            <option value="treble" selected>Treble</option>
+            <option value="bass">Bass</option>
+        </select>
+    </p>
+    <p>Blue:  
+        <select id="blueEffect">
+            <option value="distortion">Distortion</option>
+            <option value="treble">Treble</option>
+            <option value="bass" selected>Bass</option>
+        </select>
+    </p>
+</div>
+
+
+</body>
+</html>

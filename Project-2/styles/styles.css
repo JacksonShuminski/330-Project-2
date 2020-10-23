@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#title {
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+canvas{ 
+    border: 1px solid black; 
+    position: absolute;
+    top: 10px;
+    left: 480px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    font-family: Impact;
+}
+
+.control h1 {
+    margin-bottom: 0;
+}
+.control h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.control label {
+    font-family: serif;
+}
